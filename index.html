@@ -2908,8 +2908,9 @@
     class="fixed top-0 right-0 h-full w-[85%] max-w-[340px] bg-white z-[100001] shadow-2xl flex flex-col translate-x-full transition-transform duration-300 ease-in-out md:hidden"
     aria-label="Mobile Navigation Drawer" role="dialog" aria-modal="true">
 
-    <!-- Header with Close Button -->
-    <div class="px-4 py-3.5 flex items-center justify-end border-b border-gray-100 bg-white">
+    <!-- Header with Heading & Close Button -->
+    <div class="px-4 py-3.5 flex items-center justify-between border-b border-gray-200 bg-white">
+      <h3 class="text-base sm:text-lg font-bold text-gray-900 tracking-tight">FAQ for Parents</h3>
       <button id="mobile-offcanvas-close" type="button"
         class="w-8 h-8 rounded-full bg-blue-50 text-brandBlue hover:bg-orange-50 hover:text-brandOrange active:scale-95 flex items-center justify-center transition-all focus:outline-none"
         aria-label="Close navigation menu">
@@ -2917,171 +2918,145 @@
       </button>
     </div>
 
-    <!-- Information Items List (Scrollable) -->
-    <div id="mobile-offcanvas-menu" class="flex-1 overflow-y-auto py-2 px-3">
-      <!-- 1. School timings -->
-      <div class="py-0.5 px-3 text-[14px] font-normal text-gray-800">
-        1. School timings
-      </div>
-
-      <!-- 2. Transport with GPS -->
-      <div class="py-0.5 px-3 text-[14px] font-normal text-gray-800">
-        2. Transport with GPS
-      </div>
-
-      <!-- 3. Student activities -->
-      <div class="py-0.5 px-3 text-[14px] font-normal text-gray-800">
-        3. Student activities
-      </div>
-
-      <!-- 4. Track child progress -->
-      <div class="py-0.5 px-3 text-[14px] font-normal text-gray-800">
-        4. Track child progress
-      </div>
-
-      <!-- 5. School fees -->
-      <div class="py-0.5 px-3 text-[14px] font-normal text-gray-800">
-        5. School fees
-      </div>
-
-      <!-- 6. Academic results -->
-      <div class="py-0.5 px-3 text-[14px] font-normal text-gray-800">
-        6. Academic results
-      </div>
-
-      <!-- 7. School infrastructure -->
-      <div class="py-0.5 px-3 text-[14px] font-normal text-gray-800">
-        7. School infrastructure
-      </div>
-
-      <!-- 8. School discipline -->
-      <div class="py-0.5 px-3 text-[14px] font-normal text-gray-800">
-        8. School discipline
-      </div>
-
-      <!-- 9. Uniforms -->
-      <div class="py-0.5 px-3 text-[14px] font-normal text-gray-800">
-        9. Uniforms
-      </div>
-
-      <!-- 10. Important FAQs Heading -->
-      <div class="pt-2 pb-1 px-3 text-[14px] font-bold text-gray-900 border-t border-gray-100 mt-2">
-        Important FAQs
-      </div>
-
-      <!-- Accordion under Important FAQs in Sidebar -->
-      <div class="space-y-1.5 px-1 pt-1 pb-4">
-        <!-- Question A -->
+    <!-- FAQ Accordion List (Scrollable) -->
+    <div id="mobile-offcanvas-menu" class="flex-1 overflow-y-auto py-3 px-3">
+      <div class="space-y-2">
+        <!-- 1. School timings -->
         <div class="border border-gray-200 rounded-lg overflow-hidden bg-slate-50">
           <button type="button"
-            class="sidebar-faq-toggle w-full px-3 py-2 text-left flex justify-between items-center text-xs font-normal text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
-            <span class="pr-2 leading-snug">A. How often are fees revised?</span>
+            class="sidebar-faq-toggle w-full px-3.5 py-2.5 text-left flex justify-between items-center text-xs sm:text-[13px] font-medium text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
+            <span class="pr-2 leading-snug">1. School timings</span>
             <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 transition-transform duration-200 flex-shrink-0"></i>
           </button>
-          <div class="sidebar-faq-content hidden px-3 pb-2.5 pt-1 text-[11px] font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
+          <div class="sidebar-faq-content hidden px-3.5 pb-2.5 pt-1 text-[11px] sm:text-xs font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
             <p>
-              Tuition fees at Narayana Schools are revised every year, with an annual increase of at least 5%. [<a href="https://www.narayanaschools.in/assets/branches_pdf/maheshtala_fee-structure.pdf" target="_blank" rel="noopener noreferrer" class="text-brandOrange underline hover:text-[#d44800] font-normal">1</a>] Please ask the admissions office, since they can provide you with more information.
+              eKidz: 8:30 a.m. to 1:15 p.m., eChamps: 8:30 a.m. to 2:30 p.m., eTechno: 8:15 a.m. to 4:30 p.m.; Senior Secondary: Refer to the branch manual or contact the school office.
             </p>
           </div>
         </div>
 
-        <!-- Question B -->
+        <!-- 2. Transport with GPS -->
         <div class="border border-gray-200 rounded-lg overflow-hidden bg-slate-50">
           <button type="button"
-            class="sidebar-faq-toggle w-full px-3 py-2 text-left flex justify-between items-center text-xs font-normal text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
-            <span class="pr-2 leading-snug">B. What is the minimum age for admission to each class?</span>
+            class="sidebar-faq-toggle w-full px-3.5 py-2.5 text-left flex justify-between items-center text-xs sm:text-[13px] font-medium text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
+            <span class="pr-2 leading-snug">2. Transport with GPS</span>
             <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 transition-transform duration-200 flex-shrink-0"></i>
           </button>
-          <div class="sidebar-faq-content hidden px-3 pb-2.5 pt-1 text-[11px] font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
-            <ul class="space-y-1">
-              <li>• Nursery: Minimum age of 3+ years</li>
-              <li>• Kindergarten (KG 1 / Lower KG): Minimum age of 4+ years</li>
-              <li>• KG 2 / Upper KG: Minimum age of 5+ years</li>
-              <li>• Class 1: Minimum age of 6 years</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Question C -->
-        <div class="border border-gray-200 rounded-lg overflow-hidden bg-slate-50">
-          <button type="button"
-            class="sidebar-faq-toggle w-full px-3 py-2 text-left flex justify-between items-center text-xs font-normal text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
-            <span class="pr-2 leading-snug">C. How many students are there in each classroom?</span>
-            <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 transition-transform duration-200 flex-shrink-0"></i>
-          </button>
-          <div class="sidebar-faq-content hidden px-3 pb-2.5 pt-1 text-[11px] font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
+          <div class="sidebar-faq-content hidden px-3.5 pb-2.5 pt-1 text-[11px] sm:text-xs font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
             <p>
-              At eKidz, the teacher-student ratio is 24:2, and at eChamps, Grades 1 and 2 it's 30:2, with 35:1 for Grades 3 to 5.
+              Bus facilities are available with GPS tracking facilities.
             </p>
           </div>
         </div>
 
-        <!-- Question D -->
+        <!-- 3. Student activities -->
         <div class="border border-gray-200 rounded-lg overflow-hidden bg-slate-50">
           <button type="button"
-            class="sidebar-faq-toggle w-full px-3 py-2 text-left flex justify-between items-center text-xs font-normal text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
-            <span class="pr-2 leading-snug">D. How do teachers support children who need extra help with learning?</span>
+            class="sidebar-faq-toggle w-full px-3.5 py-2.5 text-left flex justify-between items-center text-xs sm:text-[13px] font-medium text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
+            <span class="pr-2 leading-snug">3. Student activities</span>
             <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 transition-transform duration-200 flex-shrink-0"></i>
           </button>
-          <div class="sidebar-faq-content hidden px-3 pb-2.5 pt-1 text-[11px] font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
+          <div class="sidebar-faq-content hidden px-3.5 pb-2.5 pt-1 text-[11px] sm:text-xs font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
             <p>
-              Teachers use practical teaching methods, individualised worksheets for each child, and individual attention; parents support home practice. If children require more assistance, they may participate in the Learner Support Programme, while the Adoption Calling Programme provides mentorship.
+              Dance, music, karate, theatre (StageStars), nSports, coding/robotics, weekly library sessions, and Olympiad preparation.
             </p>
           </div>
         </div>
 
-        <!-- Question E -->
+        <!-- 4. Track child progress -->
         <div class="border border-gray-200 rounded-lg overflow-hidden bg-slate-50">
           <button type="button"
-            class="sidebar-faq-toggle w-full px-3 py-2 text-left flex justify-between items-center text-xs font-normal text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
-            <span class="pr-2 leading-snug">E. What safety measures are in place on campus and school buses?</span>
+            class="sidebar-faq-toggle w-full px-3.5 py-2.5 text-left flex justify-between items-center text-xs sm:text-[13px] font-medium text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
+            <span class="pr-2 leading-snug">4. Track child progress</span>
             <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 transition-transform duration-200 flex-shrink-0"></i>
           </button>
-          <div class="sidebar-faq-content hidden px-3 pb-2.5 pt-1 text-[11px] font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
+          <div class="sidebar-faq-content hidden px-3.5 pb-2.5 pt-1 text-[11px] sm:text-xs font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
             <p>
-              There is surveillance in every classroom and corridor, and there are security guards manning the gates. The eChamps bus is GPS-tracked, and a woman attendant is on board.
+              Use the nConnect app, phone calls every fortnight, PTM every quarter or at the end of the term, and portfolio review.
             </p>
           </div>
         </div>
 
-        <!-- Question F -->
+        <!-- 5. School fees -->
         <div class="border border-gray-200 rounded-lg overflow-hidden bg-slate-50">
           <button type="button"
-            class="sidebar-faq-toggle w-full px-3 py-2 text-left flex justify-between items-center text-xs font-normal text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
-            <span class="pr-2 leading-snug">F. How does the school make lessons interesting and easy to understand?</span>
+            class="sidebar-faq-toggle w-full px-3.5 py-2.5 text-left flex justify-between items-center text-xs sm:text-[13px] font-medium text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
+            <span class="pr-2 leading-snug">5. School fees</span>
             <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 transition-transform duration-200 flex-shrink-0"></i>
           </button>
-          <div class="sidebar-faq-content hidden px-3 pb-2.5 pt-1 text-[11px] font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
+          <div class="sidebar-faq-content hidden px-3.5 pb-2.5 pt-1 text-[11px] sm:text-xs font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
             <p>
-              The lessons include activity-based learning, hands-on activities, and technology-driven instruction. The younger children have phonics-based reading, a learning station for each class, and a puzzle every fortnight in the Thinker’s Space in the nLearn application.
+              View the fee payment portal; the admissions officer will provide the fee structure.
             </p>
           </div>
         </div>
 
-        <!-- Question G -->
+        <!-- 6. Academic results -->
         <div class="border border-gray-200 rounded-lg overflow-hidden bg-slate-50">
           <button type="button"
-            class="sidebar-faq-toggle w-full px-3 py-2 text-left flex justify-between items-center text-xs font-normal text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
-            <span class="pr-2 leading-snug">G. Can my child choose activities based on their interests?</span>
+            class="sidebar-faq-toggle w-full px-3.5 py-2.5 text-left flex justify-between items-center text-xs sm:text-[13px] font-medium text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
+            <span class="pr-2 leading-snug">6. Academic results</span>
             <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 transition-transform duration-200 flex-shrink-0"></i>
           </button>
-          <div class="sidebar-faq-content hidden px-3 pb-2.5 pt-1 text-[11px] font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
+          <div class="sidebar-faq-content hidden px-3.5 pb-2.5 pt-1 text-[11px] sm:text-xs font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
             <p>
-              Yes, children at Narayana Schools can choose extracurricular and co-curricular activities based on their personal interests from a structured range of options provided by the school.
+              CBSE Class X 2026 toppers with 499/500 and 498/500. A Class XII 2026 student with 494/500.
             </p>
           </div>
         </div>
 
-        <!-- Question H -->
+        <!-- 7. School infrastructure -->
         <div class="border border-gray-200 rounded-lg overflow-hidden bg-slate-50">
           <button type="button"
-            class="sidebar-faq-toggle w-full px-3 py-2 text-left flex justify-between items-center text-xs font-normal text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
-            <span class="pr-2 leading-snug">H. Is a counsellor available for emotional support?</span>
+            class="sidebar-faq-toggle w-full px-3.5 py-2.5 text-left flex justify-between items-center text-xs sm:text-[13px] font-medium text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
+            <span class="pr-2 leading-snug">7. School infrastructure</span>
             <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 transition-transform duration-200 flex-shrink-0"></i>
           </button>
-          <div class="sidebar-faq-content hidden px-3 pb-2.5 pt-1 text-[11px] font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
+          <div class="sidebar-faq-content hidden px-3.5 pb-2.5 pt-1 text-[11px] sm:text-xs font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
             <p>
-              Yes, counselling is available under the Disha programme, and the counsellors are well-trained not to judge while helping out. You can contact them through the toll-free number 1800 419 1828.
+              CCTV in classrooms and corridors, gate security, and gallery photos of science labs, sports, and dance facilities.
+            </p>
+          </div>
+        </div>
+
+        <!-- 8. School discipline -->
+        <div class="border border-gray-200 rounded-lg overflow-hidden bg-slate-50">
+          <button type="button"
+            class="sidebar-faq-toggle w-full px-3.5 py-2.5 text-left flex justify-between items-center text-xs sm:text-[13px] font-medium text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
+            <span class="pr-2 leading-snug">8. School discipline</span>
+            <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 transition-transform duration-200 flex-shrink-0"></i>
+          </button>
+          <div class="sidebar-faq-content hidden px-3.5 pb-2.5 pt-1 text-[11px] sm:text-xs font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
+            <p>
+              Disha, a counselling and well-being service for student stress and personal issues. One mentor per 20 learners at eTechno.
+            </p>
+          </div>
+        </div>
+
+        <!-- 9. Uniforms -->
+        <div class="border border-gray-200 rounded-lg overflow-hidden bg-slate-50">
+          <button type="button"
+            class="sidebar-faq-toggle w-full px-3.5 py-2.5 text-left flex justify-between items-center text-xs sm:text-[13px] font-medium text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
+            <span class="pr-2 leading-snug">9. Uniforms</span>
+            <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 transition-transform duration-200 flex-shrink-0"></i>
+          </button>
+          <div class="sidebar-faq-content hidden px-3.5 pb-2.5 pt-1 text-[11px] sm:text-xs font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
+            <p>
+              Uniforms are listed by level (for example, a beige shirt with grey trousers or skirt for CBSE and tracksuits for PE).
+            </p>
+          </div>
+        </div>
+
+        <!-- 10. Important FAQs -->
+        <div class="border border-gray-200 rounded-lg overflow-hidden bg-slate-50">
+          <button type="button"
+            class="sidebar-faq-toggle w-full px-3.5 py-2.5 text-left flex justify-between items-center text-xs sm:text-[13px] font-medium text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
+            <span class="pr-2 leading-snug">10. Important FAQs</span>
+            <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 transition-transform duration-200 flex-shrink-0"></i>
+          </button>
+          <div class="sidebar-faq-content hidden px-3.5 pb-2.5 pt-1 text-[11px] sm:text-xs font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
+            <p>
+              The <a href="#faqs" class="text-brandOrange underline hover:text-[#d44800] mobile-nav-link">FAQ page</a> will clear all your doubts.
             </p>
           </div>
         </div>
