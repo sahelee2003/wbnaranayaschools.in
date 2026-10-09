@@ -105,9 +105,9 @@
   <!--<div class="bg-[#2a2a2a] h-1 w-full"></div>-->
   <nav class="bg-white shadow-md py-2.5 sm:py-3 px-3 sm:px-4 md:px-6 sticky top-0 z-50" data-aos="fade-down"
     data-aos-duration="600">
-    <div class="container mx-auto flex justify-between md:justify-center items-center">
+    <div class="container mx-auto flex justify-between items-center relative">
       <!-- Logos -->
-      <div class="flex items-center gap-1.5 sm:gap-2 md:gap-4">
+      <div class="flex items-center gap-1.5 sm:gap-2 md:gap-4 md:mx-auto">
         <div class="flex items-center gap-1 md:gap-2">
           <img src="assets/logo1.png" alt="Narayana Logo" class="h-7 sm:h-8 md:h-12 object-contain" width="120"
             height="48" decoding="async" />
@@ -125,9 +125,9 @@
         </div>
       </div>
 
-      <!-- Mobile Offcanvas Toggle Bar with Divider (Mobile only) -->
-      <div class="flex items-center gap-2 sm:gap-3 md:hidden flex-shrink-0">
-        <div class="h-7 sm:h-8 md:h-10 w-px bg-gray-300"></div>
+      <!-- Offcanvas Toggle Bar with Divider (Divider hidden on desktop, toggle at right end) -->
+      <div class="flex items-center gap-2 sm:gap-3 flex-shrink-0 md:absolute md:right-0">
+        <div class="h-7 sm:h-8 md:h-10 w-px bg-gray-300 md:hidden"></div>
         <button id="mobile-offcanvas-toggle" type="button"
           class="flex items-center justify-center p-1.5 text-brandOrange hover:text-orange-600 active:scale-95 transition-transform duration-150 focus:outline-none"
           aria-label="Open Navigation Menu" aria-expanded="false" aria-controls="mobile-offcanvas">
@@ -331,6 +331,10 @@
         <p class="text-gray-500 text-md md:text-base">
           We shape your child futures with care – from pre-primary dreams to
           higher-secondary success.
+        </p>
+
+        <p class="text-gray-500 text-md md:text-base">
+          eKidz: 8:30 a.m. to 1:15 p.m., eChamps: 8:30 a.m. to 2:30 p.m., eTechno: 8:15 a.m. to 4:30 p.m.; Senior Secondary: Refer to the branch manual or contact the school office.
         </p>
       </div>
 
@@ -597,6 +601,9 @@
         <p class="text-gray-500 text-md md:text-base">
           We shape your child futures with care – from pre-primary dreams to higher-secondary success.
         </p>
+        <p class="text-gray-500 text-md md:text-base">
+          eKidz: 8:30 a.m. to 1:15 p.m., eChamps: 8:30 a.m. to 2:30 p.m., eTechno: 8:15 a.m. to 4:30 p.m.; Senior Secondary: Refer to the branch manual or contact the school office.
+        </p>
       </div>
 
       <!-- 2-column Grid on Mobile, 4-column Grid on Desktop -->
@@ -763,7 +770,6 @@
         <div id="school-timings"
           class="scroll-mt-24 flex flex-col items-center text-center border p-2 rounded-md border-gray-200"
           data-aos="fade-up" data-aos-delay="200">
-          <div id="track-progress" class="scroll-mt-24"></div>
           <div
             class="w-16 h-16 md:w-20 md:h-20 bg-brandOrangeLight rounded-full flex items-center justify-center mb-4 md:mb-6">
             <img src="assets/calender-icon.png" alt="calendar-icon" class="" loading="lazy" decoding="async" width="80"
@@ -807,7 +813,7 @@
             process for more efficiency.
           </p>
         </div>
-        <div class="flex flex-col items-center text-center border p-2 rounded-md border-gray-200" data-aos="fade-up"
+        <div id="track-progress" class="scroll-mt-24 flex flex-col items-center text-center border p-2 rounded-md border-gray-200" data-aos="fade-up"
           data-aos-delay="200">
           <div
             class="w-16 h-16 md:w-20 md:h-20 bg-brandOrangeLight rounded-full flex items-center justify-center mb-4 md:mb-6">
@@ -2127,6 +2133,7 @@
   </section>
 
   <section id="campus-facilities" class="scroll-mt-20 py-16 md:py-20 bg-gray-50 overflow-hidden">
+    <div id="school-infrastructure" class="scroll-mt-24"></div>
     <div class="container mx-auto px-4">
       <div class="md:text-center text-left mb-10 md:mb-12" data-aos="fade-up">
         <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-3">
@@ -2898,19 +2905,19 @@
     </div>
   </div>
 
-  <!-- Mobile Offcanvas Backdrop (Mobile Only) -->
+  <!-- Offcanvas Backdrop -->
   <div id="mobile-offcanvas-backdrop"
-    class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[100000] opacity-0 pointer-events-none transition-opacity duration-300 md:hidden"
+    class="fixed inset-0 bg-slate-900/60 backdrop-blur-sm z-[100000] opacity-0 pointer-events-none transition-opacity duration-300"
     aria-hidden="true"></div>
 
-  <!-- Mobile Offcanvas Drawer (Mobile Only) -->
+  <!-- Offcanvas Drawer -->
   <aside id="mobile-offcanvas"
-    class="fixed top-0 right-0 h-full w-[85%] max-w-[340px] bg-white z-[100001] shadow-2xl flex flex-col translate-x-full transition-transform duration-300 ease-in-out md:hidden"
-    aria-label="Mobile Navigation Drawer" role="dialog" aria-modal="true">
+    class="fixed top-0 right-0 h-full w-[85%] max-w-[360px] bg-white z-[100001] shadow-2xl flex flex-col translate-x-full transition-transform duration-300 ease-in-out"
+    aria-label="Navigation Drawer" role="dialog" aria-modal="true">
 
     <!-- Header with Heading & Close Button -->
     <div class="px-4 py-3.5 flex items-center justify-between border-b border-gray-200 bg-white">
-      <h3 class="text-base sm:text-lg font-bold text-gray-900 tracking-tight">FAQ for Parents</h3>
+      <h3 class="text-base sm:text-lg font-bold text-gray-900 tracking-tight">Quick Links</h3>
       <button id="mobile-offcanvas-close" type="button"
         class="w-8 h-8 rounded-full bg-blue-50 text-brandBlue hover:bg-orange-50 hover:text-brandOrange active:scale-95 flex items-center justify-center transition-all focus:outline-none"
         aria-label="Close navigation menu">
@@ -2918,148 +2925,122 @@
       </button>
     </div>
 
-    <!-- FAQ Accordion List (Scrollable) -->
+    <!-- Navigation Items List (Scrollable) -->
     <div id="mobile-offcanvas-menu" class="flex-1 overflow-y-auto py-3 px-3">
       <div class="space-y-2">
         <!-- 1. School timings -->
-        <div class="border border-gray-200 rounded-lg overflow-hidden bg-slate-50">
-          <button type="button"
-            class="sidebar-faq-toggle w-full px-3.5 py-2.5 text-left flex justify-between items-center text-xs sm:text-[13px] font-medium text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
-            <span class="pr-2 leading-snug">1. School timings</span>
-            <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 transition-transform duration-200 flex-shrink-0"></i>
-          </button>
-          <div class="sidebar-faq-content hidden px-3.5 pb-2.5 pt-1 text-[11px] sm:text-xs font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
-            <p>
-              eKidz: 8:30 a.m. to 1:15 p.m., eChamps: 8:30 a.m. to 2:30 p.m., eTechno: 8:15 a.m. to 4:30 p.m.; Senior Secondary: Refer to the branch manual or contact the school office.
-            </p>
+        <a href="#school-timings"
+          class="mobile-nav-link flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl border border-gray-200/80 bg-slate-50 hover:bg-orange-50/70 hover:border-brandOrange/40 active:scale-[0.99] transition-all duration-200 group">
+          <div class="flex items-center gap-3 min-w-0">
+            <div
+              class="w-9 h-9 rounded-xl bg-blue-50 text-brandOrange flex items-center justify-center flex-shrink-0 group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200 shadow-sm">
+              <i class="fa-solid fa-clock text-sm"></i>
+            </div>
+            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">1. School timings</span>
           </div>
-        </div>
+          <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-brandOrange group-hover:translate-x-0.5 transition-all flex-shrink-0"></i>
+        </a>
 
         <!-- 2. Transport with GPS -->
-        <div class="border border-gray-200 rounded-lg overflow-hidden bg-slate-50">
-          <button type="button"
-            class="sidebar-faq-toggle w-full px-3.5 py-2.5 text-left flex justify-between items-center text-xs sm:text-[13px] font-medium text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
-            <span class="pr-2 leading-snug">2. Transport with GPS</span>
-            <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 transition-transform duration-200 flex-shrink-0"></i>
-          </button>
-          <div class="sidebar-faq-content hidden px-3.5 pb-2.5 pt-1 text-[11px] sm:text-xs font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
-            <p>
-              Bus facilities are available with GPS tracking facilities.
-            </p>
+        <a href="#school-transport"
+          class="mobile-nav-link flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl border border-gray-200/80 bg-slate-50 hover:bg-orange-50/70 hover:border-brandOrange/40 active:scale-[0.99] transition-all duration-200 group">
+          <div class="flex items-center gap-3 min-w-0">
+            <div
+              class="w-9 h-9 rounded-xl bg-blue-50 text-brandOrange flex items-center justify-center flex-shrink-0 group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200 shadow-sm">
+              <i class="fa-solid fa-bus text-sm"></i>
+            </div>
+            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">2. Transport with GPS</span>
           </div>
-        </div>
+          <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-brandOrange group-hover:translate-x-0.5 transition-all flex-shrink-0"></i>
+        </a>
 
         <!-- 3. Student activities -->
-        <div class="border border-gray-200 rounded-lg overflow-hidden bg-slate-50">
-          <button type="button"
-            class="sidebar-faq-toggle w-full px-3.5 py-2.5 text-left flex justify-between items-center text-xs sm:text-[13px] font-medium text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
-            <span class="pr-2 leading-snug">3. Student activities</span>
-            <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 transition-transform duration-200 flex-shrink-0"></i>
-          </button>
-          <div class="sidebar-faq-content hidden px-3.5 pb-2.5 pt-1 text-[11px] sm:text-xs font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
-            <p>
-              Dance, music, karate, theatre (StageStars), nSports, coding/robotics, weekly library sessions, and Olympiad preparation.
-            </p>
+        <a href="#student-activities"
+          class="mobile-nav-link flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl border border-gray-200/80 bg-slate-50 hover:bg-orange-50/70 hover:border-brandOrange/40 active:scale-[0.99] transition-all duration-200 group">
+          <div class="flex items-center gap-3 min-w-0">
+            <div
+              class="w-9 h-9 rounded-xl bg-blue-50 text-brandOrange flex items-center justify-center flex-shrink-0 group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200 shadow-sm">
+              <i class="fa-solid fa-palette text-sm"></i>
+            </div>
+            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">3. Student activities</span>
           </div>
-        </div>
+          <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-brandOrange group-hover:translate-x-0.5 transition-all flex-shrink-0"></i>
+        </a>
 
         <!-- 4. Track child progress -->
-        <div class="border border-gray-200 rounded-lg overflow-hidden bg-slate-50">
-          <button type="button"
-            class="sidebar-faq-toggle w-full px-3.5 py-2.5 text-left flex justify-between items-center text-xs sm:text-[13px] font-medium text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
-            <span class="pr-2 leading-snug">4. Track child progress</span>
-            <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 transition-transform duration-200 flex-shrink-0"></i>
-          </button>
-          <div class="sidebar-faq-content hidden px-3.5 pb-2.5 pt-1 text-[11px] sm:text-xs font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
-            <p>
-              Use the nConnect app, phone calls every fortnight, PTM every quarter or at the end of the term, and portfolio review.
-            </p>
+        <a href="#track-progress"
+          class="mobile-nav-link flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl border border-gray-200/80 bg-slate-50 hover:bg-orange-50/70 hover:border-brandOrange/40 active:scale-[0.99] transition-all duration-200 group">
+          <div class="flex items-center gap-3 min-w-0">
+            <div
+              class="w-9 h-9 rounded-xl bg-blue-50 text-brandOrange flex items-center justify-center flex-shrink-0 group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200 shadow-sm">
+              <i class="fa-solid fa-chart-line text-sm"></i>
+            </div>
+            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">4. Track child progress</span>
           </div>
-        </div>
+          <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-brandOrange group-hover:translate-x-0.5 transition-all flex-shrink-0"></i>
+        </a>
 
         <!-- 5. School fees -->
-        <div class="border border-gray-200 rounded-lg overflow-hidden bg-slate-50">
-          <button type="button"
-            class="sidebar-faq-toggle w-full px-3.5 py-2.5 text-left flex justify-between items-center text-xs sm:text-[13px] font-medium text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
-            <span class="pr-2 leading-snug">5. School fees</span>
-            <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 transition-transform duration-200 flex-shrink-0"></i>
-          </button>
-          <div class="sidebar-faq-content hidden px-3.5 pb-2.5 pt-1 text-[11px] sm:text-xs font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
-            <p>
-              View the fee payment portal; the admissions officer will provide the fee structure.
-            </p>
+        <a href="#school-fees"
+          class="mobile-nav-link flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl border border-gray-200/80 bg-slate-50 hover:bg-orange-50/70 hover:border-brandOrange/40 active:scale-[0.99] transition-all duration-200 group">
+          <div class="flex items-center gap-3 min-w-0">
+            <div
+              class="w-9 h-9 rounded-xl bg-blue-50 text-brandOrange flex items-center justify-center flex-shrink-0 group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200 shadow-sm">
+              <i class="fa-solid fa-indian-rupee-sign text-sm"></i>
+            </div>
+            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">5. School fees</span>
           </div>
-        </div>
+          <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-brandOrange group-hover:translate-x-0.5 transition-all flex-shrink-0"></i>
+        </a>
 
         <!-- 6. Academic results -->
-        <div class="border border-gray-200 rounded-lg overflow-hidden bg-slate-50">
-          <button type="button"
-            class="sidebar-faq-toggle w-full px-3.5 py-2.5 text-left flex justify-between items-center text-xs sm:text-[13px] font-medium text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
-            <span class="pr-2 leading-snug">6. Academic results</span>
-            <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 transition-transform duration-200 flex-shrink-0"></i>
-          </button>
-          <div class="sidebar-faq-content hidden px-3.5 pb-2.5 pt-1 text-[11px] sm:text-xs font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
-            <p>
-              CBSE Class X 2026 toppers with 499/500 and 498/500. A Class XII 2026 student with 494/500.
-            </p>
+        <a href="#academic-results"
+          class="mobile-nav-link flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl border border-gray-200/80 bg-slate-50 hover:bg-orange-50/70 hover:border-brandOrange/40 active:scale-[0.99] transition-all duration-200 group">
+          <div class="flex items-center gap-3 min-w-0">
+            <div
+              class="w-9 h-9 rounded-xl bg-blue-50 text-brandOrange flex items-center justify-center flex-shrink-0 group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200 shadow-sm">
+              <i class="fa-solid fa-trophy text-sm"></i>
+            </div>
+            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">6. Academic results</span>
           </div>
-        </div>
+          <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-brandOrange group-hover:translate-x-0.5 transition-all flex-shrink-0"></i>
+        </a>
 
         <!-- 7. School infrastructure -->
-        <div class="border border-gray-200 rounded-lg overflow-hidden bg-slate-50">
-          <button type="button"
-            class="sidebar-faq-toggle w-full px-3.5 py-2.5 text-left flex justify-between items-center text-xs sm:text-[13px] font-medium text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
-            <span class="pr-2 leading-snug">7. School infrastructure</span>
-            <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 transition-transform duration-200 flex-shrink-0"></i>
-          </button>
-          <div class="sidebar-faq-content hidden px-3.5 pb-2.5 pt-1 text-[11px] sm:text-xs font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
-            <p>
-              CCTV in classrooms and corridors, gate security, and gallery photos of science labs, sports, and dance facilities.
-            </p>
+        <a href="#school-infrastructure"
+          class="mobile-nav-link flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl border border-gray-200/80 bg-slate-50 hover:bg-orange-50/70 hover:border-brandOrange/40 active:scale-[0.99] transition-all duration-200 group">
+          <div class="flex items-center gap-3 min-w-0">
+            <div
+              class="w-9 h-9 rounded-xl bg-blue-50 text-brandOrange flex items-center justify-center flex-shrink-0 group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200 shadow-sm">
+              <i class="fa-solid fa-building-columns text-sm"></i>
+            </div>
+            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">7. School infrastructure</span>
           </div>
-        </div>
+          <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-brandOrange group-hover:translate-x-0.5 transition-all flex-shrink-0"></i>
+        </a>
 
         <!-- 8. School discipline -->
-        <div class="border border-gray-200 rounded-lg overflow-hidden bg-slate-50">
-          <button type="button"
-            class="sidebar-faq-toggle w-full px-3.5 py-2.5 text-left flex justify-between items-center text-xs sm:text-[13px] font-medium text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
-            <span class="pr-2 leading-snug">8. School discipline</span>
-            <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 transition-transform duration-200 flex-shrink-0"></i>
-          </button>
-          <div class="sidebar-faq-content hidden px-3.5 pb-2.5 pt-1 text-[11px] sm:text-xs font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
-            <p>
-              Disha, a counselling and well-being service for student stress and personal issues. One mentor per 20 learners at eTechno.
-            </p>
+        <a href="#school-discipline"
+          class="mobile-nav-link flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl border border-gray-200/80 bg-slate-50 hover:bg-orange-50/70 hover:border-brandOrange/40 active:scale-[0.99] transition-all duration-200 group">
+          <div class="flex items-center gap-3 min-w-0">
+            <div
+              class="w-9 h-9 rounded-xl bg-blue-50 text-brandOrange flex items-center justify-center flex-shrink-0 group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200 shadow-sm">
+              <i class="fa-solid fa-user-shield text-sm"></i>
+            </div>
+            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">8. School discipline</span>
           </div>
-        </div>
+          <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-brandOrange group-hover:translate-x-0.5 transition-all flex-shrink-0"></i>
+        </a>
+      </div>
 
-        <!-- 9. Uniforms -->
-        <div class="border border-gray-200 rounded-lg overflow-hidden bg-slate-50">
-          <button type="button"
-            class="sidebar-faq-toggle w-full px-3.5 py-2.5 text-left flex justify-between items-center text-xs sm:text-[13px] font-medium text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
-            <span class="pr-2 leading-snug">9. Uniforms</span>
-            <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 transition-transform duration-200 flex-shrink-0"></i>
-          </button>
-          <div class="sidebar-faq-content hidden px-3.5 pb-2.5 pt-1 text-[11px] sm:text-xs font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
-            <p>
-              Uniforms are listed by level (for example, a beige shirt with grey trousers or skirt for CBSE and tracksuits for PE).
-            </p>
-          </div>
-        </div>
-
-        <!-- 10. Important FAQs -->
-        <div class="border border-gray-200 rounded-lg overflow-hidden bg-slate-50">
-          <button type="button"
-            class="sidebar-faq-toggle w-full px-3.5 py-2.5 text-left flex justify-between items-center text-xs sm:text-[13px] font-medium text-gray-800 hover:text-brandOrange focus:outline-none transition-colors">
-            <span class="pr-2 leading-snug">10. Important FAQs</span>
-            <i class="fa-solid fa-chevron-down text-[10px] text-gray-400 transition-transform duration-200 flex-shrink-0"></i>
-          </button>
-          <div class="sidebar-faq-content hidden px-3.5 pb-2.5 pt-1 text-[11px] sm:text-xs font-normal leading-relaxed text-gray-600 border-t border-gray-100 bg-white">
-            <p>
-              The <a href="#faqs" class="text-brandOrange underline hover:text-[#d44800] mobile-nav-link">FAQ page</a> will clear all your doubts.
-            </p>
-          </div>
-        </div>
+      <!-- Get Call Back for Your Query Button -->
+      <div class="mt-6 mb-3">
+        <button type="button"
+          class="open-modal-btn w-full bg-white border border-gray-200 hover:bg-orange-50/50 hover:border-brandOrange/40 text-gray-800 font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2.5 shadow-sm hover:shadow transition-all duration-200 active:scale-[0.99] focus:outline-none"
+          onclick="if(window.closeMobileOffcanvas) window.closeMobileOffcanvas();">
+          <i class="fas fa-headset text-brandOrange text-base"></i>
+          <span class="text-xs sm:text-[13px] font-bold text-gray-800">Get Call Back for Your Query</span>
+        </button>
       </div>
     </div>
   </aside>
@@ -3071,33 +3052,6 @@
       const closeBtn = document.getElementById('mobile-offcanvas-close');
       const offcanvas = document.getElementById('mobile-offcanvas');
       const backdrop = document.getElementById('mobile-offcanvas-backdrop');
-
-      // Sidebar FAQ Accordion toggle (Single-open mode)
-      const sidebarFaqToggles = document.querySelectorAll('.sidebar-faq-toggle');
-      sidebarFaqToggles.forEach(function(btn) {
-        btn.addEventListener('click', function(e) {
-          e.stopPropagation();
-          const content = this.nextElementSibling;
-          const icon = this.querySelector('i');
-          const isCurrentlyOpen = content && !content.classList.contains('hidden');
-
-          // Close all accordion items first
-          sidebarFaqToggles.forEach(function(otherBtn) {
-            const otherContent = otherBtn.nextElementSibling;
-            const otherIcon = otherBtn.querySelector('i');
-            if (otherContent) otherContent.classList.add('hidden');
-            if (otherIcon) otherIcon.classList.remove('rotate-180');
-          });
-
-          // If the clicked item was closed, open it
-          if (!isCurrentlyOpen && content) {
-            content.classList.remove('hidden');
-            if (icon) {
-              icon.classList.add('rotate-180');
-            }
-          }
-        });
-      });
       const navLinks = document.querySelectorAll('.mobile-nav-link');
 
       function openMobileOffcanvas() {
@@ -3127,6 +3081,16 @@
       if (toggleBtn) toggleBtn.addEventListener('click', openMobileOffcanvas);
       if (closeBtn) closeBtn.addEventListener('click', closeMobileOffcanvas);
       if (backdrop) backdrop.addEventListener('click', closeMobileOffcanvas);
+
+      // Close offcanvas when open-modal-btn inside drawer is clicked
+      if (offcanvas) {
+        const modalBtnsInDrawer = offcanvas.querySelectorAll('.open-modal-btn');
+        modalBtnsInDrawer.forEach(function (btn) {
+          btn.addEventListener('click', function () {
+            closeMobileOffcanvas();
+          });
+        });
+      }
 
       document.addEventListener('keydown', function (e) {
         if (e.key === 'Escape' && offcanvas && !offcanvas.classList.contains('translate-x-full')) {
