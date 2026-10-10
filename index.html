@@ -2015,7 +2015,7 @@
             </button>
           </div>
         </div>
-        <div id="student-activities"
+        <div
           class="scroll-mt-24 bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
           data-aos="fade-up" data-aos-delay="200">
           <img src="assets/singing.webp" alt="Singing" class="w-full object-cover" loading="lazy"
@@ -2433,7 +2433,7 @@
             </button>
           </div>
         </div>
-        <div id="student-activities"
+        <div
           class="scroll-mt-24 bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
           data-aos="fade-up" data-aos-delay="200">
           <img src="assets/lab-activity.webp" alt="Lab & Activity Room" class="w-full object-cover" loading="lazy"
@@ -2800,7 +2800,6 @@
           </div>
         </div>
 
-        </div>
         <div id="faq-question-12" class="border border-gray-200 rounded-md bg-slate-50 overflow-hidden transition-all duration-300"
           data-aos="fade-up" data-aos-delay="50">
           <button
@@ -3023,41 +3022,26 @@
     </div>
   </footer>
 
-  <section class="fixed -right-10 top-[35%] hidden lg:block">
-    <div>
-      <button class="open-modal-btn bg-brandOrange rotate-[90deg] rounded-lg inline-block text-center p-4 shadow-lg"
+  <!-- Unified Floating Side Action Tabs (Single responsive bar for all devices) -->
+  <aside aria-label="Quick Action Side Tabs">
+    <!-- Get Fee Structure (Right Edge) -->
+    <div class="fixed -right-12 md:-right-10 top-[35%] z-[99999]">
+      <button type="button"
+        class="open-modal-btn bg-brandOrange hover:bg-orange-600 text-white font-medium text-xs md:text-sm px-3.5 py-2 md:p-4 rotate-[90deg] rounded-lg inline-block text-center shadow-lg shadow-orange-500/20 active:scale-95 transition-all focus:outline-none whitespace-nowrap cursor-pointer"
         onclick="setFeeStructure(3, 'YES')">
-        <span class="text-white font-medium">Get Fees Structure</span>
+        <span>Get Fee Structure</span>
       </button>
     </div>
-  </section>
-  <section class="fixed lg:-left-10 -right-10 lg:right-auto top-[50%] block z-[99999] lg:block hidden">
-    <div>
-      <button
-        class="open-modal-btn bg-[#034da2] -rotate-[90deg] rounded-lg inline-block text-center p-4 shadow-lg shadow-[#FFF]/40"
+
+    <!-- Download Brochure (Left Edge) -->
+    <div class="fixed -left-12 md:-left-10 top-[50%] z-[99999]">
+      <button type="button"
+        class="open-modal-btn bg-[#034da2] hover:bg-blue-800 text-white font-medium text-xs md:text-sm px-3.5 py-2 md:p-4 -rotate-[90deg] rounded-lg inline-block text-center shadow-lg shadow-blue-900/30 active:scale-95 transition-all focus:outline-none whitespace-nowrap cursor-pointer"
         onclick="setDownloadBrochure(3, 'YES')">
-        <span class="text-white font-medium"> Download Brochure </span>
+        <span>Download Brochure</span>
       </button>
     </div>
-  </section>
-
-  <section class="fixed lg:-left-10 -right-14 lg:right-auto top-[35%] block z-[99999] lg:hidden -rotate-[90deg]">
-
-    <button
-      class="open-modal-btn bg-brandOrange rounded-lg inline-block text-center px-4 py-2 shadow-lg shadow-[#FFF]/40"
-      onclick="setFeeStructure(3, 'YES')">
-      <span class="text-white font-medium">Get Fee Structure</span>
-    </button>
-
-  </section>
-  <section class="fixed lg:-left-10 -right-16 lg:right-auto top-[60%] block z-[99999] lg:hidden -rotate-[90deg]">
-
-    <button class="open-modal-btn bg-brandBlue rounded-lg inline-block text-center px-4 py-2 shadow-lg shadow-[#FFF]/40"
-      onclick="setDownloadBrochure(3, 'YES')">
-      <span class="text-white font-medium">Download Brochure</span>
-    </button>
-
-  </section>
+  </aside>
 
   <section class="fixed right-4 top-[50%] hidden lg:block">
     <div>
@@ -3314,20 +3298,20 @@
               class="w-9 h-9 rounded-xl bg-blue-50 text-brandOrange flex items-center justify-center flex-shrink-0 group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200 shadow-sm">
               <i class="fa-solid fa-clock text-sm"></i>
             </div>
-            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">1. School timings</span>
+            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">School timings</span>
           </div>
           <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-brandOrange group-hover:translate-x-0.5 transition-all flex-shrink-0"></i>
         </a>
 
-        <!-- 2. Transport with GPS -->
-        <a href="#school-transport"
+        <!-- 2. School fees -->
+        <a href="#fee"
           class="mobile-nav-link flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl border border-gray-200/80 bg-slate-50 hover:bg-orange-50/70 hover:border-brandOrange/40 active:scale-[0.99] transition-all duration-200 group">
           <div class="flex items-center gap-3 min-w-0">
             <div
               class="w-9 h-9 rounded-xl bg-blue-50 text-brandOrange flex items-center justify-center flex-shrink-0 group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200 shadow-sm">
-              <i class="fa-solid fa-bus text-sm"></i>
+              <i class="fa-solid fa-indian-rupee-sign text-sm"></i>
             </div>
-            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">2. Transport with GPS</span>
+            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">School fees</span>
           </div>
           <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-brandOrange group-hover:translate-x-0.5 transition-all flex-shrink-0"></i>
         </a>
@@ -3340,38 +3324,12 @@
               class="w-9 h-9 rounded-xl bg-blue-50 text-brandOrange flex items-center justify-center flex-shrink-0 group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200 shadow-sm">
               <i class="fa-solid fa-palette text-sm"></i>
             </div>
-            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">3. Student activities</span>
+            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">Student activities</span>
           </div>
           <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-brandOrange group-hover:translate-x-0.5 transition-all flex-shrink-0"></i>
         </a>
 
-        <!-- 4. Track child progress -->
-        <a href="#faq-question-11"
-          class="mobile-nav-link flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl border border-gray-200/80 bg-slate-50 hover:bg-orange-50/70 hover:border-brandOrange/40 active:scale-[0.99] transition-all duration-200 group">
-          <div class="flex items-center gap-3 min-w-0">
-            <div
-              class="w-9 h-9 rounded-xl bg-blue-50 text-brandOrange flex items-center justify-center flex-shrink-0 group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200 shadow-sm">
-              <i class="fa-solid fa-chart-line text-sm"></i>
-            </div>
-            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">4. Track child progress</span>
-          </div>
-          <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-brandOrange group-hover:translate-x-0.5 transition-all flex-shrink-0"></i>
-        </a>
-
-        <!-- 5. School fees -->
-        <a href="#fee"
-          class="mobile-nav-link flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl border border-gray-200/80 bg-slate-50 hover:bg-orange-50/70 hover:border-brandOrange/40 active:scale-[0.99] transition-all duration-200 group">
-          <div class="flex items-center gap-3 min-w-0">
-            <div
-              class="w-9 h-9 rounded-xl bg-blue-50 text-brandOrange flex items-center justify-center flex-shrink-0 group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200 shadow-sm">
-              <i class="fa-solid fa-indian-rupee-sign text-sm"></i>
-            </div>
-            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">5. School fees</span>
-          </div>
-          <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-brandOrange group-hover:translate-x-0.5 transition-all flex-shrink-0"></i>
-        </a>
-
-        <!-- 6. Academic results -->
+        <!-- 4. Academic results -->
         <a href="#academic"
           class="mobile-nav-link flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl border border-gray-200/80 bg-slate-50 hover:bg-orange-50/70 hover:border-brandOrange/40 active:scale-[0.99] transition-all duration-200 group">
           <div class="flex items-center gap-3 min-w-0">
@@ -3379,12 +3337,12 @@
               class="w-9 h-9 rounded-xl bg-blue-50 text-brandOrange flex items-center justify-center flex-shrink-0 group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200 shadow-sm">
               <i class="fa-solid fa-trophy text-sm"></i>
             </div>
-            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">6. Academic results</span>
+            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">Academic results</span>
           </div>
           <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-brandOrange group-hover:translate-x-0.5 transition-all flex-shrink-0"></i>
         </a>
 
-        <!-- 7. School infrastructure -->
+        <!-- 5. School infrastructure -->
         <a href="#campus-facilities"
           class="mobile-nav-link flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl border border-gray-200/80 bg-slate-50 hover:bg-orange-50/70 hover:border-brandOrange/40 active:scale-[0.99] transition-all duration-200 group">
           <div class="flex items-center gap-3 min-w-0">
@@ -3392,7 +3350,33 @@
               class="w-9 h-9 rounded-xl bg-blue-50 text-brandOrange flex items-center justify-center flex-shrink-0 group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200 shadow-sm">
               <i class="fa-solid fa-building-columns text-sm"></i>
             </div>
-            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">7. School infrastructure</span>
+            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">School infrastructure</span>
+          </div>
+          <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-brandOrange group-hover:translate-x-0.5 transition-all flex-shrink-0"></i>
+        </a>
+
+        <!-- 6. Transport with GPS -->
+        <a href="#school-transport"
+          class="mobile-nav-link flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl border border-gray-200/80 bg-slate-50 hover:bg-orange-50/70 hover:border-brandOrange/40 active:scale-[0.99] transition-all duration-200 group">
+          <div class="flex items-center gap-3 min-w-0">
+            <div
+              class="w-9 h-9 rounded-xl bg-blue-50 text-brandOrange flex items-center justify-center flex-shrink-0 group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200 shadow-sm">
+              <i class="fa-solid fa-bus text-sm"></i>
+            </div>
+            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">Transport with GPS</span>
+          </div>
+          <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-brandOrange group-hover:translate-x-0.5 transition-all flex-shrink-0"></i>
+        </a>
+
+        <!-- 7. Track child progress -->
+        <a href="#faq-question-11"
+          class="mobile-nav-link flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl border border-gray-200/80 bg-slate-50 hover:bg-orange-50/70 hover:border-brandOrange/40 active:scale-[0.99] transition-all duration-200 group">
+          <div class="flex items-center gap-3 min-w-0">
+            <div
+              class="w-9 h-9 rounded-xl bg-blue-50 text-brandOrange flex items-center justify-center flex-shrink-0 group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200 shadow-sm">
+              <i class="fa-solid fa-chart-line text-sm"></i>
+            </div>
+            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">Track child progress</span>
           </div>
           <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-brandOrange group-hover:translate-x-0.5 transition-all flex-shrink-0"></i>
         </a>
@@ -3405,7 +3389,20 @@
               class="w-9 h-9 rounded-xl bg-blue-50 text-brandOrange flex items-center justify-center flex-shrink-0 group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200 shadow-sm">
               <i class="fa-solid fa-user-shield text-sm"></i>
             </div>
-            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">8. School discipline</span>
+            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">School discipline</span>
+          </div>
+          <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-brandOrange group-hover:translate-x-0.5 transition-all flex-shrink-0"></i>
+        </a>
+
+        <!-- 9. Important FAQ -->
+        <a href="#faqs"
+          class="mobile-nav-link flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl border border-gray-200/80 bg-slate-50 hover:bg-orange-50/70 hover:border-brandOrange/40 active:scale-[0.99] transition-all duration-200 group">
+          <div class="flex items-center gap-3 min-w-0">
+            <div
+              class="w-9 h-9 rounded-xl bg-blue-50 text-brandOrange flex items-center justify-center flex-shrink-0 group-hover:bg-brandOrange group-hover:text-white transition-colors duration-200 shadow-sm">
+              <i class="fa-solid fa-circle-question text-sm"></i>
+            </div>
+            <span class="text-xs sm:text-[13px] font-semibold text-gray-800 group-hover:text-brandOrange transition-colors">Important FAQ</span>
           </div>
           <i class="fa-solid fa-chevron-right text-[11px] text-gray-400 group-hover:text-brandOrange group-hover:translate-x-0.5 transition-all flex-shrink-0"></i>
         </a>
@@ -3554,9 +3551,11 @@
             closeMobileOffcanvas();
 
             if (targetElement) {
-              const faqToggle = targetElement.querySelector('.faq-toggle');
-              if (faqToggle && Array.from(faqToggles).includes(faqToggle)) {
-                openFaq(faqToggle, true);
+              if (targetElement.id && targetElement.id.startsWith('faq-question-')) {
+                const faqToggle = targetElement.querySelector('.faq-toggle');
+                if (faqToggle && Array.from(faqToggles).includes(faqToggle)) {
+                  openFaq(faqToggle, true);
+                }
               }
 
               setTimeout(function () {
