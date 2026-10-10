@@ -51,6 +51,32 @@
       },
     };
   </script>
+  <style>
+    #faqs .faq-item {
+      transition: background-color 220ms ease, border-color 220ms ease, box-shadow 220ms ease;
+    }
+
+    #faqs .faq-item.is-open {
+      background-color: #fff7ed;
+      border-color: rgb(249 115 22 / 55%);
+      box-shadow: 0 4px 14px rgb(15 23 42 / 8%);
+    }
+
+    #faqs .faq-item.is-open .faq-question-text,
+    #faqs .faq-item.is-open .faq-icon {
+      color: #c2410c;
+    }
+
+    #faqs .faq-item.is-open .faq-icon-wrap {
+      border-color: #f97316;
+    }
+
+    #faqs .faq-item.is-targeted {
+      background-color: #ffedd5;
+      border-color: #f97316;
+      box-shadow: 0 6px 18px rgb(249 115 22 / 18%);
+    }
+  </style>
   <!-- Google Tag Manager -->
   <script>
     (function (w, d, s, l, i) {
@@ -322,7 +348,8 @@
     </div>
   </section>
 
-  <section id="academic-programs-desktop" class="scroll-mt-20 py-12 md:py-16 bg-white overflow-hidden hidden md:block">
+  <div id="academic-programs-target" class="scroll-mt-20">
+  <section class="py-12 md:py-16 bg-white overflow-hidden hidden md:block">
     <div class="container mx-auto px-4 md:px-6">
       <div class="md:text-center text-left mb-10 md:mb-12" data-aos="fade-up">
         <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-3">
@@ -334,7 +361,7 @@
         </p>
 
         <p class="text-gray-500 text-md md:text-base">
-          eKidz: 8:30 a.m. to 1:15 p.m., eChamps: 8:30 a.m. to 2:30 p.m., eTechno: 8:15 a.m. to 4:30 p.m.; Senior Secondary: Refer to the branch manual or contact the school office.
+          <strong>School timings:</strong> <strong>eKidz:</strong> 8:30 a.m. to 1:15 p.m., <strong>eChamps:</strong> 8:30 a.m. to 2:30 p.m., <strong>eTechno:</strong> 8:15 a.m. to 4:30 p.m.; <strong>Senior Secondary:</strong> Refer to the branch manual or contact the school office.
         </p>
       </div>
 
@@ -592,7 +619,7 @@
     </div>
   </section>
 
-  <section id="academic-programs" class="scroll-mt-20 py-12 md:py-16 bg-white overflow-hidden block md:hidden">
+  <section class="py-12 md:py-16 bg-white overflow-hidden block md:hidden">
     <div class="container mx-auto px-4 md:px-6">
       <div class="md:text-center text-left mb-10 md:mb-12" data-aos="fade-up">
         <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-3">
@@ -602,7 +629,7 @@
           We shape your child futures with care – from pre-primary dreams to higher-secondary success.
         </p>
         <p class="text-gray-500 text-md md:text-base">
-          eKidz: 8:30 a.m. to 1:15 p.m., eChamps: 8:30 a.m. to 2:30 p.m., eTechno: 8:15 a.m. to 4:30 p.m.; Senior Secondary: Refer to the branch manual or contact the school office.
+          <strong>eKidz:</strong> 8:30 a.m. to 1:15 p.m., <strong>eChamps:</strong> 8:30 a.m. to 2:30 p.m., <strong>eTechno:</strong> 8:15 a.m. to 4:30 p.m.; <strong>Senior Secondary:</strong> Refer to the branch manual or contact the school office.
         </p>
       </div>
 
@@ -738,6 +765,7 @@
       </div>
     </div>
   </section>
+  </div>
 
   <section id="why-narayana" class="scroll-mt-20 py-12 md:py-20 bg-gray-50 overflow-hidden">
     <div id="school-discipline" class="scroll-mt-24"></div>
@@ -846,6 +874,34 @@
       </div>
     </div>
   </section>
+
+
+  <section id="fee" class="py-12 md:py-16 overflow-visible">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="bg-[#007fc0] rounded-2xl overflow-visible flex flex-col md:flex-row md:items-end gap-6 md:gap-0 min-h-[280px] md:min-h-[320px]"
+                data-aos="fade-up">
+                <div
+                    class="flex justify-center md:justify-start md:order-1 md:flex-[0_0_auto] md:w-[38%] lg:w-[34%] -mt-4 md:-mt-20 md:-ml-2 lg:-ml-4">
+                    <img src="assets/school-girl.webp" alt="Student with book"
+                        class="w-full max-w-[280px] md:max-w-none md:w-auto md:max-h-[340px] object-contain object-bottom"
+                        loading="lazy" decoding="async" />
+                </div>
+                <div class="flex-1 flex flex-col justify-center px-6 pb-6 md:pb-8 md:pt-8 md:pl-4 lg:pl-8 md:pr-10 lg:pr-16 text-center md:text-left"
+                    data-aos="fade-up" data-aos-delay="150">
+                    <h2 class="text-white text-2xl md:text-3xl lg:text-4xl font-bold mb-3 md:mb-4">Narayana Schools Fee
+                        Structure</h2>
+                    <p class="text-white text-base md:text-lg leading-relaxed mb-5 md:mb-6 max-w-2xl">
+                        Our fee structure is thoughtfully designed to provide high-quality education with exceptional
+                        value. We ensure that learning remains affordable, accessible, and enriching for every student.
+                    </p>
+                    <button type="button"
+                        class="open-modal-btn bg-[#f5821f] hover:bg-[#e0751a] text-white font-bold py-3 px-6 md:px-8 rounded-lg transition shadow-lg w-fit mx-auto md:mx-0">
+                        Get Fee Details
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
 
 
 
@@ -1837,6 +1893,102 @@
     </div>
   </section>
 
+  <section id="student-activities" class="scroll-mt-20 py-16 md:py-20 bg-gray-50 overflow-hidden">
+    <div id="school-infrastructure" class="scroll-mt-24"></div>
+    <div class="container mx-auto px-4">
+      <div class="md:text-center text-left mb-10 md:mb-12" data-aos="fade-up">
+        <h2 class="text-2xl md:text-3xl lg:text-4xl font-bold text-gray-800 mb-3">
+          Student Activities
+        </h2>
+        <p class="text-gray-500 text-md md:text-base">
+          Children can enjoy and explore what they love.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
+        <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up"
+          data-aos-delay="100">
+          <img src="assets/digital-classroom.webp" alt="Digital Classroom" class="w-full object-cover" loading="lazy"
+            decoding="async" width="407" height="305" />
+          <div class="p-4">
+            <h3 class="text-brandBlue font-bold text-[18px] md:text-[22px] mb-2 md:mb-4">
+              Dance
+            </h3>
+            <p class="text-gray-500 text-[15px] font-medium md:text-[15px] leading-relaxed">
+              Students move, express themselves, and find confidence on the floor
+            </p>
+          </div>
+        </div>
+        <div id="student-activities"
+          class="scroll-mt-24 bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+          data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/lab-activity.webp" alt="Lab & Activity Room" class="w-full object-cover" loading="lazy"
+            decoding="async" />
+          <div class="p-4">
+            <h3 class="text-brandBlue font-bold text-[18px] md:text-[22px] mb-2 md:mb-4">
+              Music
+            </h3>
+            <p class="text-gray-500 text-[15px] font-medium md:text-[15px] leading-relaxed">
+              Every child gets a chance to sing, play, and enjoy rhythm
+            </p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up"
+          data-aos-delay="300">
+          <img src="assets/hostel.webp" alt="Hostel" class="w-full object-cover" loading="lazy" decoding="async"
+            width="407" height="305" />
+          <div class="p-4">
+            <h3 class="text-brandBlue font-bold text-[18px] md:text-[22px] mb-2 md:mb-4">
+              Karate
+            </h3>
+            <p class="text-gray-500 text-[15px] font-medium md:text-[15px] leading-relaxed">
+              A discipline-building activity that also keeps children active and focused
+            </p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up"
+          data-aos-delay="100">
+          <img src="assets/spaciouscampus.webp" alt="Spacious Campus" class="w-full object-cover" loading="lazy"
+            decoding="async" width="407" height="305" />
+          <div class="p-4">
+            <h3 class="text-brandBlue font-bold text-[18px] md:text-[22px] mb-2 md:mb-4">
+              Theatre (StageStars)
+            </h3>
+            <p class="text-gray-500 text-[15px] font-medium md:text-[15px] leading-relaxed">
+              Children step onto the stage, speak up, and grow in confidence
+            </p>
+          </div>
+        </div>
+        <div class="scroll-mt-24 bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow"
+          data-aos="fade-up" data-aos-delay="200">
+          <img src="assets/safetransportation.webp" alt="Safe Transport" class="w-full object-cover" loading="lazy"
+            decoding="async" width="407" height="305" />
+          <div class="p-4">
+            <h3 class="text-brandBlue font-bold text-[18px] md:text-[22px] mb-2 md:mb-4">
+              Coding and robotics
+            </h3>
+            <p class="text-gray-500 text-[15px] font-medium md:text-[15px] leading-relaxed">
+              Children experiement and solve problems, turning curiosity into real skills
+            </p>
+          </div>
+        </div>
+        <div class="bg-white rounded-lg overflow-hidden shadow-sm hover:shadow-md transition-shadow" data-aos="fade-up"
+          data-aos-delay="300">
+          <img src="assets/safe.webp" alt="Safety & Security" class="w-full object-cover" loading="lazy"
+            decoding="async" width="407" height="305" />
+          <div class="p-4">
+            <h3 class="text-brandBlue font-bold text-[18px] md:text-[22px] mb-2 md:mb-4">
+              Olympiad preparation
+            </h3>
+            <p class="text-gray-500 text-[15px] font-medium md:text-[15px] leading-relaxed">
+              Children get ready for national-level challenges while sharpening their thinking
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
 
   <section id="right-school" class="scroll-mt-20 py-12 md:py-16 bg-white border-t border-gray-100 overflow-hidden">
     <div class="max-w-7xl mx-auto px-4 md:px-6">
@@ -1989,6 +2141,7 @@
     </div>
   </section>
 
+  <div id="academic" class="scroll-mt-20">
   <section class="lg:block hidden">
     <div class="container mx-auto px-4 md:px-6 py-8 md:text-center">
       <div data-aos="fade-up" data-aos-delay="200" class="text-center">
@@ -2020,6 +2173,7 @@
       </div>
     </div>
   </section>
+  </div>
 
   <section id="testimonials" class="scroll-mt-20 py-16 md:py-20 bg-white overflow-hidden">
     <div class="container mx-auto px-4 md:px-6">
@@ -2441,6 +2595,42 @@
               Narayana Schools follow a standardized and disciplined uniform dress code suitable for every academic
               stage. Complete uniform guidelines and materials are provided at the respective campus admission center
               upon registration.
+            </p>
+          </div>
+        </div>
+        <div id="faq-question-11" class="border border-gray-200 rounded-md bg-slate-50 overflow-hidden transition-all duration-300"
+          data-aos="fade-up" data-aos-delay="50">
+          <button
+            class="w-full px-4 md:px-6 py-3 md:py-4 text-left flex justify-between items-center focus:outline-none faq-toggle">
+            <span class="font-medium text-gray-800 text-sm md:text-lg pr-4">11. How will I know about my child’s progress?</span>
+            <div
+              class="border border-gray-400 rounded-full w-5 h-5 md:w-6 md:h-6 flex items-center justify-center flex-shrink-0">
+              <i
+                class="fas fa-chevron-up text-gray-500 text-[10px] md:text-xs transition-transform duration-300 faq-icon rotate-180"></i>
+            </div>
+          </button>
+          <div class="px-4 md:px-6 pb-4 hidden faq-content text-xs md:text-[15px] leading-relaxed text-gray-600">
+            <p>
+              Use the nConnect app, phone calls every fortnight, PTM every quarter or at the end of the term, and portfolio review.
+            </p>
+          </div>
+        </div>
+        
+        </div>
+        <div id="faq-question-12" class="border border-gray-200 rounded-md bg-slate-50 overflow-hidden transition-all duration-300"
+          data-aos="fade-up" data-aos-delay="50">
+          <button
+            class="w-full px-4 md:px-6 py-3 md:py-4 text-left flex justify-between items-center focus:outline-none faq-toggle">
+            <span class="font-medium text-gray-800 text-sm md:text-lg pr-4">12. How can I find out about school discipline or policies?</span>
+            <div
+              class="border border-gray-400 rounded-full w-5 h-5 md:w-6 md:h-6 flex items-center justify-center flex-shrink-0">
+              <i
+                class="fas fa-chevron-up text-gray-500 text-[10px] md:text-xs transition-transform duration-300 faq-icon rotate-180"></i>
+            </div>
+          </button>
+          <div class="px-4 md:px-6 pb-4 hidden faq-content text-xs md:text-[15px] leading-relaxed text-gray-600">
+            <p>
+              Disha, a counselling and well-being service for student stress and personal issues. One mentor per 20 learners at eTechno.
             </p>
           </div>
         </div>
@@ -2917,7 +3107,7 @@
 
     <!-- Header with Heading & Close Button -->
     <div class="px-4 py-3.5 flex items-center justify-between border-b border-gray-200 bg-white">
-      <h3 class="text-base sm:text-lg font-bold text-gray-900 tracking-tight">Quick Links</h3>
+      <h3 class="text-base sm:text-lg font-bold text-gray-900 tracking-tight">FAQ For Parents</h3>
       <button id="mobile-offcanvas-close" type="button"
         class="w-8 h-8 rounded-full bg-blue-50 text-brandBlue hover:bg-orange-50 hover:text-brandOrange active:scale-95 flex items-center justify-center transition-all focus:outline-none"
         aria-label="Close navigation menu">
@@ -2929,7 +3119,7 @@
     <div id="mobile-offcanvas-menu" class="flex-1 overflow-y-auto py-3 px-3">
       <div class="space-y-2">
         <!-- 1. School timings -->
-        <a href="#school-timings"
+        <a href="#academic-programs-target"
           class="mobile-nav-link flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl border border-gray-200/80 bg-slate-50 hover:bg-orange-50/70 hover:border-brandOrange/40 active:scale-[0.99] transition-all duration-200 group">
           <div class="flex items-center gap-3 min-w-0">
             <div
@@ -2968,7 +3158,7 @@
         </a>
 
         <!-- 4. Track child progress -->
-        <a href="#track-progress"
+        <a href="#faq-question-11"
           class="mobile-nav-link flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl border border-gray-200/80 bg-slate-50 hover:bg-orange-50/70 hover:border-brandOrange/40 active:scale-[0.99] transition-all duration-200 group">
           <div class="flex items-center gap-3 min-w-0">
             <div
@@ -2981,7 +3171,7 @@
         </a>
 
         <!-- 5. School fees -->
-        <a href="#school-fees"
+        <a href="#fee"
           class="mobile-nav-link flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl border border-gray-200/80 bg-slate-50 hover:bg-orange-50/70 hover:border-brandOrange/40 active:scale-[0.99] transition-all duration-200 group">
           <div class="flex items-center gap-3 min-w-0">
             <div
@@ -2994,7 +3184,7 @@
         </a>
 
         <!-- 6. Academic results -->
-        <a href="#academic-results"
+        <a href="#academic"
           class="mobile-nav-link flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl border border-gray-200/80 bg-slate-50 hover:bg-orange-50/70 hover:border-brandOrange/40 active:scale-[0.99] transition-all duration-200 group">
           <div class="flex items-center gap-3 min-w-0">
             <div
@@ -3007,7 +3197,7 @@
         </a>
 
         <!-- 7. School infrastructure -->
-        <a href="#school-infrastructure"
+        <a href="#campus-facilities"
           class="mobile-nav-link flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl border border-gray-200/80 bg-slate-50 hover:bg-orange-50/70 hover:border-brandOrange/40 active:scale-[0.99] transition-all duration-200 group">
           <div class="flex items-center gap-3 min-w-0">
             <div
@@ -3020,7 +3210,7 @@
         </a>
 
         <!-- 8. School discipline -->
-        <a href="#school-discipline"
+        <a href="#faq-question-12"
           class="mobile-nav-link flex items-center justify-between gap-3 px-3.5 py-2.5 rounded-xl border border-gray-200/80 bg-slate-50 hover:bg-orange-50/70 hover:border-brandOrange/40 active:scale-[0.99] transition-all duration-200 group">
           <div class="flex items-center gap-3 min-w-0">
             <div
@@ -3036,10 +3226,10 @@
       <!-- Get Call Back for Your Query Button -->
       <div class="mt-6 mb-3">
         <button type="button"
-          class="open-modal-btn w-full bg-white border border-gray-200 hover:bg-orange-50/50 hover:border-brandOrange/40 text-gray-800 font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2.5 shadow-sm hover:shadow transition-all duration-200 active:scale-[0.99] focus:outline-none"
+          class="open-modal-btn w-full bg-brandOrange hover:bg-orange-600 text-white font-bold py-3 px-4 rounded-xl flex items-center justify-center gap-2.5 shadow-md hover:shadow-lg transition-all duration-200 active:scale-[0.99] focus:outline-none"
           onclick="if(window.closeMobileOffcanvas) window.closeMobileOffcanvas();">
-          <i class="fas fa-headset text-brandOrange text-base"></i>
-          <span class="text-xs sm:text-[13px] font-bold text-gray-800">Get Call Back for Your Query</span>
+          <i class="fas fa-headset text-white text-base"></i>
+          <span class="text-xs sm:text-[13px] font-bold text-white">Request a Callback</span>
         </button>
       </div>
     </div>
@@ -3053,6 +3243,72 @@
       const offcanvas = document.getElementById('mobile-offcanvas');
       const backdrop = document.getElementById('mobile-offcanvas-backdrop');
       const navLinks = document.querySelectorAll('.mobile-nav-link');
+      const faqToggles = document.querySelectorAll('#faqs .faq-toggle');
+      let faqHighlightTimeout;
+
+      function setFaqExpanded(toggle, expanded) {
+        const content = toggle.nextElementSibling;
+        const icon = toggle.querySelector('.faq-icon');
+        const item = toggle.parentElement;
+        toggle.setAttribute('aria-expanded', String(expanded));
+        content.classList.toggle('hidden', !expanded);
+        item.classList.toggle('is-open', expanded);
+        if (icon) icon.classList.toggle('rotate-180', !expanded);
+      }
+
+      function openFaq(toggle, highlight) {
+        faqToggles.forEach(function (faqToggle) {
+          setFaqExpanded(faqToggle, faqToggle === toggle);
+        });
+
+        if (highlight) {
+          window.clearTimeout(faqHighlightTimeout);
+          faqToggles.forEach(function (faqToggle) {
+            faqToggle.parentElement.classList.remove('is-targeted');
+          });
+          toggle.parentElement.classList.add('is-targeted');
+          faqHighlightTimeout = window.setTimeout(function () {
+            toggle.parentElement.classList.remove('is-targeted');
+          }, 1400);
+        }
+      }
+
+      faqToggles.forEach(function (toggle, index) {
+        const content = toggle.nextElementSibling;
+        const item = toggle.parentElement;
+        const questionText = toggle.querySelector('span');
+        const iconWrap = toggle.querySelector('.faq-icon').parentElement;
+        const toggleId = 'faq-toggle-' + (index + 1);
+        const contentId = 'faq-answer-' + (index + 1);
+        const expanded = index === 0;
+
+        item.classList.add('faq-item');
+        if (questionText) questionText.classList.add('faq-question-text');
+        if (iconWrap) iconWrap.classList.add('faq-icon-wrap');
+        toggle.id = toggleId;
+        toggle.setAttribute('aria-controls', contentId);
+        content.id = contentId;
+        content.setAttribute('role', 'region');
+        content.setAttribute('aria-labelledby', toggleId);
+        setFaqExpanded(toggle, expanded);
+      });
+
+      document.addEventListener('click', function (event) {
+        const toggle = event.target instanceof Element
+          ? event.target.closest('#faqs .faq-toggle')
+          : null;
+        if (!toggle) return;
+
+        event.preventDefault();
+        event.stopPropagation();
+
+        const shouldExpand = toggle.getAttribute('aria-expanded') !== 'true';
+        if (shouldExpand) {
+          openFaq(toggle);
+        } else {
+          setFaqExpanded(toggle, false);
+        }
+      }, true);
 
       function openMobileOffcanvas() {
         if (!offcanvas || !backdrop) return;
@@ -3110,6 +3366,11 @@
             closeMobileOffcanvas();
 
             if (targetElement) {
+              const faqToggle = targetElement.querySelector('.faq-toggle');
+              if (faqToggle && Array.from(faqToggles).includes(faqToggle)) {
+                openFaq(faqToggle, true);
+              }
+
               setTimeout(function () {
                 const nav = document.querySelector('nav');
                 const navHeight = nav ? nav.offsetHeight : 64;
